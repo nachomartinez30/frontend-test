@@ -16,7 +16,7 @@ Thank you for your interest on being part of the CBQA family, in order to contin
 * Complete and no completed tasks must be visually different from each other, feel free to implement the css stuff necesary to achieve it.
 
 # Bonus
-* Feel free to unit test your code if you want, that would give you a HUGE pluse when we review it
+* Feel free to unit test your code if you want, that would give you a HUGE plus when we review it
 * Feel free to use add the css you want and show off your skills, this is your moment!
 * Once finished push your changes and let us know via email so one of your experts can take a look at it.
 
