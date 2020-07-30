@@ -1,9 +1,9 @@
 # CBQA frontend candidate tes
-Thank you for the insterest in being part of the CBQA family, in order to continue with the hiring process you have to complete this excersise.
+Thank you for your interest on being part of the CBQA family, in order to continue with the hiring process you have to complete this exercise.
 
 # Intructions
-* Do not install another library, use the ones included in the project
-* Create a branch based on master and pushit using this format `test/your-name-frontend-react` where you need to change `your-name` section with your first and last name
+* Do not install another library, use the ones included in the project.
+* Create a branch based on master and pushit using this format `test/your-name-frontend-react` where you need to change `your-name` section with your first and last name.
 * Fetch this data api `https://jsonplaceholder.typicode.com/todos/`
 * Group tasks using `userId` response property so all tasks are grouped by userId, something like this
  - userId1
