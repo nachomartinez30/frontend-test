@@ -1,4 +1,4 @@
-# CBQA frontend candidate tes
+# CBQA frontend candidate test
 Thank you for your interest on being part of the CBQA family, in order to continue with the hiring process you have to complete this exercise.
 
 # Intructions
