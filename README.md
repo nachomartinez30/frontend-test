@@ -14,7 +14,7 @@ Thank you for your interest on being part of the CBQA family, in order to contin
    -- task 4
 * You can toogle tasks to be completed
 * Complete and no completed tasks must be visually different from each other, feel free to implement the css stuff necesary to achieve it.
-* Track completed/no completed tasks of each group somewhow visually, up yo you how you want to handle this
+* Track completed/no completed tasks of each group somehow visually, up to you how you want to handle this
 
 # Bonus
 * Feel free to unit test your code if you want, that would give you a HUGE plus when we review it
