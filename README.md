@@ -17,7 +17,7 @@ Thank you for your interest on being part of the CBQA family, in order to contin
 
 # Bonus
 * Feel free to unit test your code if you want, that would give you a HUGE plus when we review it
-* Feel free to use add the css you want and show off your skills, this is your moment!
+* Feel free to add the css you want and show off your skills, this is your moment!
 * Once finished push your changes and let us know via email so one of your experts can take a look at it.
 
 Good luck!
