@@ -3,7 +3,7 @@ Thank you for your interest on being part of the CBQA family, in order to contin
 
 # Intructions
 * Do not install another library, use the ones included in the project.
-* Create a branch based on master and pushit using this format `test/your-name-frontend-react` where you need to change `your-name` section with your first and last name.
+* Fork the repo and email it to `engineering@cbqasolutions.com` once it's ready to review
 * Fetch this data api `https://jsonplaceholder.typicode.com/todos/`
 * Group tasks using `userId` response property so all tasks are grouped by userId, something like this
  - userId1
