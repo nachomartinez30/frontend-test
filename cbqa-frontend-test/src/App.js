@@ -17,8 +17,11 @@ const App = () => {
   }, [''])
 
   return (
-    <div className="App">
-      <h1>Users and Task</h1>
+    <div align='center'>
+      <h1>
+        <span className='title_1'>&lt;Users&gt;</span>
+        <span className='title_2'>Tasks</span>
+      </h1>
       {/* TABLE with RECORDS By Users */}
       {(users.length > 1) ?
         users.map((userId) => {
@@ -27,7 +30,7 @@ const App = () => {
           return <TaskTable key={userId} data={userTask} id={userId} />
         })
         :
-        <h2>No Users founded...</h2>
+        <h2>...No users found...</h2>
       }
 
     </div>

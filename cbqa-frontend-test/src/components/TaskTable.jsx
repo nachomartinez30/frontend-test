@@ -9,26 +9,45 @@ const TaskTable = ({ data, id }) => {
         // FILTER COMPLETED AND NO COMPLETED TASKS
         setCompletedTask(data.filter(item => item.completed === true))
         setNoCompletedTasks(data.filter(item => item.completed === false))
-    }, [''])
+    }, [data])
+
+    const toggleCompleteStatus = (id) => {
+
+        /* get object with id */
+        const result = completedTask.findIndex(item => {
+            if (item.uiserid === id) {
+                console.log(item);
+            }
+        })
+
+
+        /* change status */
+    }
 
     return (
         <Fragment>
-            <h1>User {id} tasks:</h1>
-            <table>
-                <tr>
-                    <th>STATUS</th>
-                    <td>TITLE</td>
-                </tr>
-                {/* NO COMPLETED TASKS */}
-                <Tasks
-                    data={noCompletedTasks}
-                />
-                {/* COMPLETED TASK */}
-                <Tasks
-                    completed
-                    data={completedTask}
-                />
-            </table>
+            <h2>User {id} tasks:</h2>
+            <div>
+                <table>
+                    <tr>
+                        <td>STATUS</td>
+                        <td>TITLE</td>
+                        <td>TASK ID</td>
+                        <td>Actions</td>
+                    </tr>
+                    {/* NO COMPLETED TASKS */}
+                    <Tasks
+                        data={noCompletedTasks}
+                        handleClick={toggleCompleteStatus}
+                    />
+                    {/* COMPLETED TASK */}
+                    <Tasks
+                        completed
+                        data={completedTask}
+                        handleClick={toggleCompleteStatus}
+                    />
+                </table>
+            </div>
         </Fragment>
     );
 }
