@@ -4,7 +4,7 @@ import Tasks from './Tasks'
 const TaskTable = ({ data, id }) => {
 
     const [state, setState] = useState(data)
-    const [refresh, setRefresh] = useState(true)
+    
     const [completedTask, setCompletedTask] = useState([])
     const [noCompletedTasks, setNoCompletedTasks] = useState([])
 
@@ -12,19 +12,21 @@ const TaskTable = ({ data, id }) => {
         // FILTER COMPLETED AND NO COMPLETED TASKS
         setCompletedTask(state.filter(item => item.completed === true))
         setNoCompletedTasks(state.filter(item => item.completed === false))
-        setRefresh(false)
-    }, [refresh])
+    }, [state])
 
     const toggleCompleteStatus = (id) => {
         /* get object with id */
         const indexSelected = state.findIndex((item) => item.id === id)
+        /*  */
         const newData = [...state]
+        /* get objet to change value */
         newData[indexSelected] = {
             ...state[indexSelected],
             completed: !state[indexSelected].completed
         }
+
+        /* set the value to global state */
         setState(newData)
-        setRefresh(true)
         /* change status */
     }
 
