@@ -2,25 +2,29 @@ import React, { Fragment, useEffect, useState } from 'react'
 import Tasks from './Tasks'
 
 const TaskTable = ({ data, id }) => {
+
+    const [state, setState] = useState(data)
+    const [refresh, setRefresh] = useState(true)
     const [completedTask, setCompletedTask] = useState([])
     const [noCompletedTasks, setNoCompletedTasks] = useState([])
 
     useEffect(() => {
         // FILTER COMPLETED AND NO COMPLETED TASKS
-        setCompletedTask(data.filter(item => item.completed === true))
-        setNoCompletedTasks(data.filter(item => item.completed === false))
-    }, [data])
+        setCompletedTask(state.filter(item => item.completed === true))
+        setNoCompletedTasks(state.filter(item => item.completed === false))
+        setRefresh(false)
+    }, [refresh])
 
     const toggleCompleteStatus = (id) => {
-
         /* get object with id */
-        const result = completedTask.findIndex(item => {
-            if (item.uiserid === id) {
-                console.log(item);
-            }
-        })
-
-
+        const indexSelected = state.findIndex((item) => item.id === id)
+        const newData = [...state]
+        newData[indexSelected] = {
+            ...state[indexSelected],
+            completed: !state[indexSelected].completed
+        }
+        setState(newData)
+        setRefresh(true)
         /* change status */
     }
 
