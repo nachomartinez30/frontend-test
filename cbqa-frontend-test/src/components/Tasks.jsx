@@ -8,7 +8,7 @@ const Tasks = ({ data, completed, handleClick }) => {
         <Fragment>
             <tr className={(completed) ? 'completed-task' : 'incompleted-task'}>
                 <th rowspan={data.length + 1}>
-                    {(completed) ? 'Completed' : 'No Completed'}
+                    {(completed) ? 'COMPLETED' : 'NO COMPLETED'}
                 </th>
                 {(data.length <= 0) ? <td>No TODOS</td> : null}
             </tr>
@@ -21,7 +21,7 @@ const Tasks = ({ data, completed, handleClick }) => {
                             <button className={(completed) ? 'btn_incomplete' : 'btn_complete'}
                                 onClick={()=>handleClick(item.id)}
                             >
-                                {(completed) ? 'Incomplete' : 'Complete'}
+                                {(completed) ? 'Set incomplete' : 'Set complete'}
                             </button>
                         </td>
                     </tr>

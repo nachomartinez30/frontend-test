@@ -17,7 +17,8 @@ const TaskTable = ({ data, id }) => {
     const toggleCompleteStatus = (id) => {
         /* get object with id */
         const indexSelected = state.findIndex((item) => item.id === id)
-        /*  */
+       
+        
         const newData = [...state]
         /* get objet to change value */
         newData[indexSelected] = {
